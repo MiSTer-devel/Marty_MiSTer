@@ -28,9 +28,13 @@ The file marty_db.tsv contains a database of game entries, and optionally will a
 
 ### File Organization
 
-CD's image files should be placed in their own folder, similar to other CD-based cores. Several games for this system require either a boot diskette to start, or a blank diskette to run properly and save. If you put a diskette image in the same folder as the CD and name it the same as the cd's .cue or .chd or .iso file, the core will optionally automatically mount this diskette for you. If you append `_1` to that filename, it will mount in the second FDD drive instead. Some popular sets of CD images do not come with any boot diskettes, so you will have to find them elsewhere.
+CD's image files should be placed in their own folder, similar to other CD-based cores. Several games for this system require either a boot diskette to start, or a blank diskette to run properly and save. If you put a diskette image in the same folder as the CD and name it the same as the cd's .cue or .chd or .iso file, the core will optionally automatically mount this diskette for you. If you append `_1` to that filename, it will mount in the second FDD drive instead. There also exists bootable Towns System Software CDs images where you can load a diskette, launch from the GUI and avoid the renaming procedure. Some popular sets of CD images do not come with any boot diskettes, so you will have to find them elsewhere.
 
 If you have the database enabled, the core will automatically create and mount a blank floppy for you when the cd requires it.
+
+### MIDI
+
+MT32-pi is supported over USER I/O port. To use MIDI you must enable the FMT-40x MIDI card in System Options.
 
 ## Special thanks
 
